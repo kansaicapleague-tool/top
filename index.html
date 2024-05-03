@@ -5,19 +5,56 @@
 <meta name="description" content="webページの概要">
 <meta name="keywords" content="半角コンマ(,)でキーワードを区切って入力">
 <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
-<!-- <link rel="stylesheet" href="index.css"> -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@500&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<link rel="stylesheet" href="index.css">
 </head>
 <body>
     <header>
-        <h1>関西キャップリーグ運営用ツール</h1>
+        <h1>関西キャップリーグ1部順位表</h1>
     </header>
-    <h2>順位表画像</h2>
-    <a href="https://kansaicapleague-tool.github.io/firststandings">1部順位表画像作成</a>
-    <a href="https://kansaicapleague-tool.github.io/secondstandings">2部順位表画像作成</a>
-    <h2>試合結果画像</h2>
-    <a href="https://kansaicapleague-tool.github.io/firstresult">1部試合結果画像作成</a>
-    <a href="https://kansaicapleague-tool.github.io/secondresult">2部試合結果画像作成</a>
+    <main>
+        <!-- 入力フォーム -->
+        <label>1位チーム:<input type="text" id="firstTeam"></label>
+        <label>勝:<input type="text" id="firstTeamWin"></label>
+        <label>負:<input type="text" id="firstTeamLose"></label>
+        <label>分:<input type="text" id="firstTeamDraw"></label><br>
+        <label>2位チーム:<input type="text" id="secondTeam"></label>
+        <label>勝:<input type="text" id="secondTeamWin"></label>
+        <label>負:<input type="text" id="secondTeamLose"></label>
+        <label>分:<input type="text" id="secondTeamDraw"></label><br>
+        <label>3位チーム:<input type="text" id="thirdTeam"></label>
+        <label>勝:<input type="text" id="thirdTeamWin"></label>
+        <label>負:<input type="text" id="thirdTeamLose"></label>
+        <label>分:<input type="text" id="thirdTeamDraw"></label><br>
+        <label>4位チーム:<input type="text" id="forthTeam"></label>
+        <label>勝:<input type="text" id="forthTeamWin"></label>
+        <label>負:<input type="text" id="forthTeamLose"></label>
+        <label>分:<input type="text" id="forthTeamDraw"></label><br>
+        <label>5位チーム:<input type="text" id="fifthTeam"></label>
+        <label>勝:<input type="text" id="fifthTeamWin"></label>
+        <label>負:<input type="text" id="fifthTeamLose"></label>
+        <label>分:<input type="text" id="fifthTeamDraw"></label><br>
+        <label>6位チーム:<input type="text" id="sixthTeam"></label>
+        <label>勝:<input type="text" id="sixthTeamWin"></label>
+        <label>負:<input type="text" id="sixthTeamLose"></label>
+        <label>分:<input type="text" id="sixthTeamDraw"></label><br>
+        <input type="button" value="確認" id="checkButton">
+        <input type="button" value="ダウンロード" id="downloadButton"><br>
 
-    <!-- <script href=”index.js”></script> -->
+    </main>
+    <div id="target" class="image">
+        <img src="firststandingsbackground.jpg" />
+        <p id="firstTeamname"></p>
+        <p id="secondTeamname"></p>
+        <p id="thirdTeamname"></p>
+        <p id="forthTeamname"></p>
+        <p id="fifthTeamname"></p>
+        <p id="sixthTeamname"></p>	
+    </div>
+
+    <script src="index.js"></script>
 </body>
 </html>
