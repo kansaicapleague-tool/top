@@ -1,0 +1,70 @@
+h1 {
+    font-family: "Zen Kaku Gothic New", sans-serif;
+}
+body {
+    font-family: "Zen Kaku Gothic New", sans-serif;
+}
+
+.image {/*親div*/
+    position: relative;/*相対配置*/
+}
+    
+.image p#firstTeamname {
+    position: absolute;/*絶対配置*/
+    color: black;/*文字は黒に*/
+    font-size: 4.5vw;
+    top: 24.4%;
+    left: 14.7%;
+    margin:0;
+    padding:0;
+}
+
+.image p#secondTeamname {
+    position: absolute;/*絶対配置*/
+    color: black;/*文字は黒に*/
+    font-size: 4.5vw;
+    top: 35.85%;
+    left: 14.7%;
+    margin:0;
+    padding:0;
+}
+.image p#thirdTeamname {
+    position: absolute;/*絶対配置*/
+    color: black;/*文字は黒に*/
+    font-size: 4.5vw;
+    top: 47.3%;
+    left: 14.7%;
+    margin:0;
+    padding:0;
+}
+.image p#forthTeamname {
+    position: absolute;/*絶対配置*/
+    color: black;/*文字は黒に*/
+    font-size: 4.5vw;
+    top: 58.9%;
+    left: 14.7%;
+    margin:0;
+    padding:0;
+}
+.image p#fifthTeamname {
+    position: absolute;/*絶対配置*/
+    color: black;/*文字は黒に*/
+    font-size: 4.5vw;
+    top: 70.9%;
+    left: 14.7%;
+    margin:0;
+    padding:0;
+}
+.image p#sixthTeamname {
+    position: absolute;/*絶対配置*/
+    color: black;/*文字は黒に*/
+    font-size: 4.5vw;
+    top: 82.5%;
+    left: 14.7%;
+    margin:0;
+    padding:0;
+}
+
+.image img {
+    width: 100%;
+}
